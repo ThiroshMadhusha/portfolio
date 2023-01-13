@@ -1,0 +1,38 @@
+.slick-prev {
+  z-index: 1;
+}
+.slick-next {
+  z-index: 1;
+}
+
+.slick-dots li button:before {
+  color: rgb(179, 178, 178) !important;
+  font-size: 10px !important;
+  margin-top: 30px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+h2:hover {
+  color: #037fff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.portfolio-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-header {
+    font-size: 1.2rem;
+  }
+}
