@@ -1,0 +1,326 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  /* min-height: 100vh; */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  /* background-color: rgb(2, 11, 90); */
+}
+
+/* Make images easier to work with */
+/* img,
+picture {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  transition: all 400ms ease;
+  border: 4px solid #4db5ff;
+} */
+.img2 {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  transition: all 400ms ease;
+  border: 4px solid #4db5ff;
+}
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-color: transparent;
+}
+.imageicon1 {
+  align-items: center;
+  font-size: 4rem;
+  color: red;
+}
+
+.imageicon2 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(0, 174, 255);
+}
+
+.imageicon3 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(255, 230, 0);
+}
+
+.imageicon4 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(255, 0, 0);
+}
+
+.imageicon5 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(0, 89, 255);
+}
+
+.imageicon6 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(0, 195, 255);
+}
+
+.imageicon7 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(162, 0, 255);
+}
+
+.imageicon8 {
+  align-items: center;
+  font-size: 4rem;
+  color: rgb(255, 136, 0);
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --green-light: rgb(165, 231, 252);
+  --green-dark: #15a2c5;
+  --blue-light: rgb(255, 195, 106);
+  --blue-dark: #ff0606;
+  --orange-light: rgb(141, 202, 243);
+  --orange-dark: #b66a07;
+  --purple-light: rgb(96, 144, 247);
+  --purple-dark: #334084;
+  --yellow-light: rgb(228, 241, 45);
+  --yellow-dark: #4f59e6;
+  --brown-light: rgb(63, 189, 228);
+  --brown-dark: #f32fc2;
+  --red-light: rgb(250, 144, 94);
+  --red-dark: #13d343;
+  --pink-light: rgb(50, 51, 45);
+  --pink-dark: #893191;
+
+  --white-light: rgb(255, 255, 255);
+  --white-dark: #999999;
+}
+
+/* body { */
+/* font-family: system-ui; */
+/* display: grid; */
+/* min-height: 100vh; */
+/* place-content: center; */
+/* overflow: hidden; */
+/* } */
+
+.orbit {
+  --size: 10rem;
+  --speed: 120s;
+  transform: scale(1);
+}
+/* .orbit {
+  margin-left: 31.5rem;
+  margin-top: 15rem;
+  margin-bottom: 14rem;
+} */
+
+.orbit .center-image {
+  width: var(--size);
+  position: relative;
+  z-index: 10;
+}
+.orbit .center-image img {
+  width: var(--size);
+
+  position: absolute;
+  transition: opacity 500ms;
+}
+.orbit .center-image img:not(:first-child):hover {
+  opacity: 0;
+  border-radius: 50%;
+}
+.orbit ul {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  height: var(--size);
+  position: relative;
+  list-style: none;
+  --icon-bg: var(--green-light);
+  --text-bg: var(--green-dark);
+  transform-origin: center;
+  animation: orbit var(--speed) linear infinite;
+}
+.orbit ul:hover {
+  animation-play-state: paused;
+  --orbit-play-state: paused;
+}
+.orbit li {
+  --icon-bg: pink;
+  --text-bg: blue;
+  position: absolute;
+  width: 6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  font-weight: 500;
+  color: var(--white-light);
+  text-align: center;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  margin-inline: 3rem;
+}
+.orbit li:hover {
+  --throb-play-state: paused;
+}
+.orbit li:nth-child(1) {
+  --throb-delay: 0ms;
+}
+.orbit li:nth-child(2) {
+  --throb-delay: 500ms;
+}
+.orbit li:nth-child(3) {
+  --throb-delay: 1000ms;
+}
+.orbit li:nth-child(4) {
+  --throb-delay: 1500ms;
+}
+.orbit li:nth-child(5) {
+  --throb-delay: 2000ms;
+}
+.orbit li:nth-child(6) {
+  --throb-delay: 2500ms;
+}
+.orbit li:nth-child(7) {
+  --throb-delay: 3000ms;
+}
+.orbit li:nth-child(8) {
+  --throb-delay: 3500ms;
+}
+.orbit li > * {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border-radius: inherit;
+  position: absolute;
+  animation: orbit var(--speed) linear reverse infinite,
+    throb 1s var(--throb-delay) ease-in-out infinite alternate;
+  animation-play-state: var(--orbit-play-state, running),
+    var(--throb-play-state, running);
+}
+.orbit li > div {
+  background-color: var(--icon-bg);
+}
+.orbit li > p {
+  background: var(--text-bg);
+  transition: opacity 500ms;
+  opacity: 0;
+}
+.orbit li:hover > p {
+  opacity: 1;
+}
+.orbit li:nth-child(1) {
+  --icon-bg: var(--blue-light);
+  --text-bg: var(--blue-dark);
+  transform: translate(15rem, 0rem);
+}
+.orbit li:nth-child(2) {
+  --icon-bg: var(--green-light);
+  --text-bg: var(--green-dark);
+  transform: translate(10rem, 10rem);
+}
+.orbit li:nth-child(3) {
+  --icon-bg: var(--pink-light);
+  --text-bg: var(--pink-dark);
+  transform: translate(0, 15rem);
+}
+.orbit li:nth-child(4) {
+  --icon-bg: var(--red-light);
+  --text-bg: var(--red-dark);
+  transform: translate(-10rem, 10rem);
+}
+.orbit li:nth-child(5) {
+  --icon-bg: var(--brown-light);
+  --text-bg: var(--brown-dark);
+  transform: translate(-15rem, 0rem);
+}
+.orbit li:nth-child(6) {
+  --icon-bg: var(--yellow-light);
+  --text-bg: var(--yellow-dark);
+  transform: translate(-10rem, -10rem);
+}
+.orbit li:nth-child(7) {
+  --icon-bg: var(--purple-light);
+  --text-bg: var(--purple-dark);
+  transform: translate(0, -15rem);
+}
+.orbit li:nth-child(8) {
+  --icon-bg: var(--orange-light);
+  --text-bg: var(--orange-dark);
+  transform: translate(10rem, -10rem);
+}
+
+@keyframes orbit {
+  100% {
+    rotate: 1turn;
+  }
+}
+@keyframes hold-position {
+  100% {
+    rotate: -1turn;
+  }
+}
+@keyframes throb {
+  100% {
+    scale: 1.05;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1024px) {
+  /* .orbit {
+    margin-left: 14rem;
+    margin-top: 14rem;
+    transform: scale(0.8);
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  /* .orbit {
+    margin-left: 4.5rem;
+    margin-top: 10rem;
+    transform: scale(0.5);
+  } */
+  /* .orbit li{
+    display: none;
+  } */
+}
