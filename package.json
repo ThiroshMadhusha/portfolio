@@ -1,7 +1,6 @@
 {
   "name": "my-portfolio-website",
   "version": "0.1.0",
-  "homepage": "https://ThiroshMadhusha.github.io/portfolio_gh",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.2.3",
