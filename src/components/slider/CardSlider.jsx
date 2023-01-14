@@ -19,7 +19,6 @@ export default function CardSlider() {
     // speed: 20,
     // autoplaySpeed: 20,
     // cssEase: "linear",
-
     // Add slider responsive media query
     responsive: [
       {

@@ -73,6 +73,9 @@ h2 {
   font-weight: 600;
   margin: 0.5rem 0;
 }
+.desc{
+  font-size: 0.8rem;
+}
 h2:hover {
   color: #037fff;
   transition: all 0.3s ease-in-out;
