@@ -31,7 +31,7 @@ const Contact = () => {
           <article className="contact__option">
             <AiOutlineMail className="contact__option-icon" />
             <h4>Email</h4>
-            <h6>thiroshmadhusha0520@gmail.com</h6>
+            <h6 className="card-name">thiroshmadhusha0520@gmail.com</h6>
             <a
               href="mailto:thiroshmadhusha0520@gmail.com"
               target="_blank"
@@ -44,7 +44,7 @@ const Contact = () => {
           <article className="contact__option">
             <BsLinkedin className="contact__option-icon" />
             <h4>Linkedin</h4>
-            <h6>Thirosh Madhusha</h6>
+            <h6 className="card-name">Thirosh Madhusha</h6>
             <a
               href="https://www.linkedin.com/in/thirosh-madhusha"
               target="_blank"
@@ -57,7 +57,7 @@ const Contact = () => {
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>Whatsapp</h4>
-            <h6>+94 775338747</h6>
+            <h6 className="card-name">+94 775338747</h6>
             <a
               href="https://wa.me/+94775338747"
               target="_blank"
