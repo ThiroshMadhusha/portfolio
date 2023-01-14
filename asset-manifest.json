@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d647182f.css",
+    "main.js": "/portfolio/static/js/main.a9c8f525.js",
+    "static/media/cutravel.png": "/portfolio/static/media/cutravel.d547187ede131a66f8aa.png",
+    "static/media/tea.png": "/portfolio/static/media/tea.73a69cd87183109e6da3.png",
+    "static/media/fish.png": "/portfolio/static/media/fish.93c81f14cbdf22ff35f9.png",
+    "static/media/education.png": "/portfolio/static/media/education.07cc1aeb4385e77943e9.png",
+    "static/media/icecream.png": "/portfolio/static/media/icecream.38173782689ecf43bf5e.png",
+    "static/media/travel.png": "/portfolio/static/media/travel.54005c18e8d61d5027c6.png",
+    "static/media/electro.png": "/portfolio/static/media/electro.9fc010bf4e4fb9a78992.png",
+    "static/media/shopping.png": "/portfolio/static/media/shopping.bc93d13fec10dbd3f907.png",
+    "static/media/ui.png": "/portfolio/static/media/ui.e54b7d8798a026eb8453.png",
+    "static/media/bus.png": "/portfolio/static/media/bus.439a1693c669ce2e838a.png",
+    "static/media/furniture.png": "/portfolio/static/media/furniture.ba1cad33b2ad6d944df4.png",
+    "static/media/png1.png": "/portfolio/static/media/png1.ec2306305f46fd79b6d8.png",
+    "static/media/law.png": "/portfolio/static/media/law.365b24048ff1cf375b1e.png",
+    "static/media/ThiroshMadhusha.pdf": "/portfolio/static/media/ThiroshMadhusha.4d8f6f0943223236a21c.pdf",
+    "static/media/png2.jpg": "/portfolio/static/media/png2.3ad01d17c51859810ef7.jpg",
+    "static/media/thirosh.jpg": "/portfolio/static/media/thirosh.d00ba50f67d2c35b2695.jpg",
+    "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portfolio/index.html",
+    "main.d647182f.css.map": "/portfolio/static/css/main.d647182f.css.map",
+    "main.a9c8f525.js.map": "/portfolio/static/js/main.a9c8f525.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d647182f.css",
+    "static/js/main.a9c8f525.js"
+  ]
+}
