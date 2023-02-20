@@ -12,7 +12,7 @@ const Header = () => {
         <h5>Hello I'm</h5>
         <h1>Thirosh Madhusha</h1>
         <h5 className="text-light">
-          Frontend Developer | Backend Developer | Fullstack Developer
+          Frontend Developer | QA Engineer | Backend Developer | Fullstack Developer
         </h5>
 
         {/* Add Cv Download Link */}
