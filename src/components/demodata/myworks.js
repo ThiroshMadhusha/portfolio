@@ -42,16 +42,15 @@ export const frontend = [
   {
     id: 4,
     image: img9,
-    title: "Tourism Travel",
+    title: "Furniture Buying & Selling",
     category: "Front-end",
     description: "ReactJs Framework, HTMl, CSS",
     github: "https://github.com/ThiroshMadhusha/Furniture-Website",
   },
   {
-
     id: 5,
     image: img12,
-    title: "Furniture Buying & Selling",
+    title: "Tourism Travel",
     category: "Front-end",
     description: "ReactJs, HTMl, CSS, Sass",
     github: "https://github.com/ThiroshMadhusha/Tourism-Travel",
@@ -71,7 +70,7 @@ export const backend = [
   {
     id: 2,
     image: img4,
-    title: "IceCream Factory Inventory Management System",
+    title: "IceCream Factory Inventory Management System(CRUD)",
     category: "Full-Stack",
     description: "MERN Stack",
     github: "https://github.com/ThiroshMadhusha/KaleyIceCream",
